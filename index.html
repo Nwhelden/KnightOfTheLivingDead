@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Knight_of_the_Living_Dead</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" width=512 height=512 style="width: 512px; height: 512px; background: url('Build/Knight_of_the_Living_Dead_WEBGL.jpg') center / cover"></canvas>
+    <script src="Build/Knight_of_the_Living_Dead_WEBGL.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/Knight_of_the_Living_Dead_WEBGL.data",
+        frameworkUrl: "Build/Knight_of_the_Living_Dead_WEBGL.framework.js",
+        codeUrl: "Build/Knight_of_the_Living_Dead_WEBGL.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "Knight_of_the_Living_Dead",
+        productVersion: "1.0",
+        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+      });
+    </script>
+  </body>
+</html>
